@@ -1,0 +1,41 @@
+.timer-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-content {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 6px solid #6DD5E3;
+  border-radius: 50%;
+  color: white;
+  margin: 10px;
+  padding: 80px;
+}
+
+#timer-name {
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 5px;
+}
+
+#time-left {
+  color: white;
+  margin: 5px;
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+
+#total-time {
+  color: white;
+  margin-top: 13px;
+  font-size: 1.3rem;
+}

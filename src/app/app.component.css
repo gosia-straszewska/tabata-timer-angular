@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+.container-app {
+  max-width: 1050px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title-app {
+  color: #6DD5E3;
+  font-weight: 800;
+  font-size: 64px;
+  text-transform: uppercase;
+  margin: 20px 0 0;
+}
+
+.timer-container {
+  max-width: 1050px;
+  position: relative;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin: 0 auto; */
+}

@@ -1,0 +1,28 @@
+.control-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.start-stop-btn-option,
+.reset-btn-option{
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000000;
+  border-radius: 6px;
+  margin: 5px;
+  outline: none;
+  width: 85px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.start-stop-btn-option{
+  border: 1px solid rgb(83, 185, 83);  
+  background-color: rgb(83, 185, 83);
+}
