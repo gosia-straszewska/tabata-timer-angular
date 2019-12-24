@@ -1,8 +1,8 @@
 <div class="settings-section">
     <label id="preparation">{{title}}</label>
     <div>
-        <button id="preparation-decrement" >-</button>
-        <span id="preparation-length">00:00</span>
-        <button id="preparation-increment">+</button>
+        <button id="preparation-decrement" (click)="decreasePreparation()" >-</button>
+        <span id="preparation-length">{{this.formatTime.formatTimer(this.preparationTime)}}</span>
+        <button id="preparation-increment" (click)="increasePreparation()">+</button>
     </div>
 </div>

@@ -1,8 +1,8 @@
 <div class="settings-section">
     <label id="workout">{{title}}</label>
     <div>
-        <button id="workout-decrement" >-</button>
-        <span id="workout-length">00:00</span>
-        <button id="workout-increment">+</button>
+        <button id="workout-decrement" (click)="decreaseWorkout()">-</button>
+        <span id="workout-length">{{this.formatTime.formatTimer(this.workoutTime)}}</span>
+        <button id="workout-increment" (click)="increaseWorkout()">+</button>
     </div>
 </div>

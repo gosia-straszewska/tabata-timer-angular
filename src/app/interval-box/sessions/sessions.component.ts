@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sessions.component.css']
 })
 export class SessionsComponent implements OnInit {
+  title = "Sessions"
+  sessions = 1;
 
   constructor() { }
 

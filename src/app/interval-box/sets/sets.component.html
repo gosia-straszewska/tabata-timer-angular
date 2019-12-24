@@ -1,8 +1,8 @@
 <div class="settings-section">
-    <label id="sets">Sets</label>
+    <label id="sets">{{title}}</label>
     <div>
-        <button id="sets-decrement">-</button>
-        <span id="sets-length">00:00</span>
-        <button id="sets-increment">+</button>
+        <button id="sets-decrement" (click)="decreaseSets()">-</button>
+        <span id="sets-length">{{sets}}</span>
+        <button id="sets-increment" (click)="increaseSets()">+</button>
     </div>
 </div>

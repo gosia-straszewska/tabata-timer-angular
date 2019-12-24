@@ -1,8 +1,8 @@
 <div class="settings-section">
     <label id="break">Rest</label>
     <div>
-        <button id="break-decrement">-</button>
-        <span id="break-length">00:00</span>
-        <button id="break-increment">+</button>
+        <button id="break-decrement" (click)="decreaseRest()">-</button>
+        <span id="break-length">{{this.formatTime.formatTimer(this.restTime)}}</span>
+        <button id="break-increment" (click)="increaseRest()">+</button>
     </div>
 </div>
