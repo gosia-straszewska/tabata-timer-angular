@@ -7,17 +7,16 @@ import { FormatTimeService } from 'src/app/format-time.service';
   selector: 'app-timer-box',
   templateUrl: './timer-box.component.html',
   styleUrls: ['./timer-box.component.css'],
-  providers: [FormatTimeService]
 })
 export class TimerBoxComponent implements OnInit {
   activePhase = "name" //do ustawienia
+  // totalTime = this.formatTime.totalTime; // object - service
 
-  timeLeftInSecond = 180; // do ustawienia
-  
-  constructor( private formatTime: FormatTimeService) { }
+  constructor(private formatTime: FormatTimeService) { }
 
   ngOnInit() {
-    console.log(this.formatTime.formatTimer(this.timeLeftInSecond))
+    console.log(this.formatTime.formatTimer(this.formatTime.timers.totalTime));
   }
-
 }
+
+

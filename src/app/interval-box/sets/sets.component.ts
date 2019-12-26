@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormatTimeService } from 'src/app/format-time.service';
 
 @Component({
   selector: 'app-sets',
@@ -8,23 +9,16 @@ import { Component, OnInit } from '@angular/core';
 
 export class SetsComponent implements OnInit {
   title = "Sets";
-  sets = 1
 
-  increaseSets(event) {
-    if(this.sets < 6){
-      this.sets = this.sets + 1
-    }
-    console.log("sets")
+  increaseSets() {
+    this.formatTime.increaseSets()
   }
 
-  decreaseSets(event) {
-    if(this.sets > 1){
-      this.sets = this.sets - 1
-    }
-    console.log("sets")
+  decreaseSets() {
+    this.formatTime.decreaseSets()
   }
 
-  constructor() { }
+  constructor(private formatTime: FormatTimeService) { }
 
   ngOnInit() {
   }

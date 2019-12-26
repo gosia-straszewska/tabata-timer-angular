@@ -2,7 +2,7 @@
     <label id="workout">{{title}}</label>
     <div>
         <button id="workout-decrement" (click)="decreaseWorkout()">-</button>
-        <span id="workout-length">{{this.formatTime.formatTimer(this.workoutTime)}}</span>
+        <span id="workout-length">{{this.formatTime.formatTimer(this.formatTime.timers.workoutTime)}}</span>
         <button id="workout-increment" (click)="increaseWorkout()">+</button>
     </div>
 </div>

@@ -2,7 +2,7 @@
     <label id="break">Rest</label>
     <div>
         <button id="break-decrement" (click)="decreaseRest()">-</button>
-        <span id="break-length">{{this.formatTime.formatTimer(this.restTime)}}</span>
+        <span id="break-length">{{this.formatTime.formatTimer(this.formatTime.timers.restTime)}}</span>
         <button id="break-increment" (click)="increaseRest()">+</button>
     </div>
 </div>

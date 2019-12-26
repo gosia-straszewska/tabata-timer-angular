@@ -2,7 +2,7 @@
     <label id="sets">{{title}}</label>
     <div>
         <button id="sets-decrement" (click)="decreaseSets()">-</button>
-        <span id="sets-length">{{sets}}</span>
+        <span id="sets-length">{{this.formatTime.timers.sets}}</span>
         <button id="sets-increment" (click)="increaseSets()">+</button>
     </div>
 </div>
