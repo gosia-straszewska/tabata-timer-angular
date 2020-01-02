@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormatTimeService } from 'src/app/format-time.service';
 
 @Component({
   selector: 'app-control-btns',
@@ -7,9 +8,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ControlBtnsComponent implements OnInit {
 
-  constructor() { }
+  start = {
+    background: "rgb(219, 93, 93)",
+    border: "rgb(219, 93, 93)"
+  }
+
+  stop = {
+    background: "rgb(83, 185, 83)",
+    border: "rgb(83, 185, 83)"
+  }
+
+  StartStop(){
+    this.formatTime.onStartStop()
+  }
+
+  decreaseTotalTimer(){
+    this.formatTime.decreaseTotalTimer()
+  }
+
+  onReset(){
+    this.formatTime.onReset()
+  }
+  constructor( private formatTime: FormatTimeService) { }
 
   ngOnInit() {
   }
-
 }

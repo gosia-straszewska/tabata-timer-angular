@@ -1,7 +1,7 @@
 <div class="timer-box">
-    <div class="timer-content">
-        <label id="timer-name">{{this.formatTime.timers.activePhase}}</label>
-        <span id="time-left">00:00</span>
+    <div class="timer-content" [ngStyle]="color">
+        <label id="timer-name" [ngStyle]="color">{{this.formatTime.timers.activePhase}}</label>
+        <span id="time-left">{{this.formatTime.formatTimer(this.formatTime.setWorktime())}}</span>
     </div>
     <div id="total-time">TOTAL TIME: {{this.formatTime.formatTimer(this.formatTime.timers.totalTime)}}</div>
 </div>

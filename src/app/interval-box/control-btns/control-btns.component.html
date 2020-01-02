@@ -1,4 +1,4 @@
 <div class="control-btns">
-    <button class="start-stop-btn-option">Start</button>
-    <button class="reset-btn-option" >Reset</button>
+    <button class="start-stop-btn-option" (click)="StartStop()" [ngStyle]="this.formatTime.timers.isStart ? start : stop">{{this.formatTime.timers.isStart ? 'Stop' : 'Start'}}</button>
+    <button class="reset-btn-option" (click)="onReset()">Reset</button>
 </div>
